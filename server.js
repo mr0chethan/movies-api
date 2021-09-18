@@ -6,7 +6,7 @@ let server=express() // instantiate  by creating express
 server.use(express.static("public"))
 
 server.get("/",(req,res)=>{
-    res.send(<h1>server is running</h1>)
+    res.send("<h1>server is running</h1>")
 })
 
 server.get("/movies",function(req,res){
