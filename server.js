@@ -1,7 +1,9 @@
 let express = require("express")
-let data=require("./data.json")
+let data=require("./public/data.json")
 
 let server=express() // instantiate  by creating express
+
+server.use(express.static("public"))
 
 server.get("/movies",function(req,res){
     res.json(data)
@@ -24,7 +26,9 @@ server.get("/genre",function(req,res){
     res.json(uniqueGenreObjects);
 })
 
-server.listen(3000)//start server with port number to uniquely identify process
+server.listen(process.env.PORT || 3000,
+    ()=>console.log("server is running"));//start server with port number to uniquely identify process
+    //
 
 
 

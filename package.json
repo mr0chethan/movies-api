@@ -1,15 +1,25 @@
 {
   "name": "movies-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr0chethan/movies-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mr0chethan/movies-api/issues"
+  },
+  "homepage": "https://github.com/mr0chethan/movies-api#readme",
+  "description": ""
 }
